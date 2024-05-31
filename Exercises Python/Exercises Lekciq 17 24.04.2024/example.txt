@@ -1,0 +1,4 @@
+Абсолютен път: C:\Users\Martina\Desktop\Python2024\Python Cource HW\Home Works\Exersise Python\Exersise Lekciq 17 24.04.2024\example.txt
+Relative path: Спрямо папката, в която работим, в случая: 
+Exersise Python\Exersise Lekciq 17 24.04.2024\example.txt
+

@@ -1,0 +1,625 @@
+#list insert............
+#fruits = ['apple', 'banana', 'cherry']
+#fruits.insert(1, orange)
+#print(fruits)
+
+
+#Pop Example..................
+#fruits = ['apple', 'banana', 'cherry']
+#element = fruits.pop()
+
+#print(fruits)
+#print(element)
+
+
+#List remove........
+#fruits = ['apple', 'banana', 'cherry'] 
+#fruits.remove('banana')
+
+#print(fruits)
+
+
+
+#0.2.................
+#fruits = ['apple-somth', 1, 'banana', 'cherry'] 
+#if 1 in fruits:
+#    fruits.remove(1)#
+#else:
+ #   print('Element not exist')
+#print(fruits)
+
+
+#min/max/sum..........
+#l = [1,2,3,4,5]
+#print(sum(l))
+#rint(min(l))
+#print(max(l))
+
+
+#find sum of list element:.......................
+#l =[1,2,3,4,5]
+#for el in l:
+ #   print(el)
+
+#2............
+
+#l =[1,2,3,4,5]
+#total_sum = 0
+
+#for el in l:
+#    total_sum+=el
+#print(total_sum)
+
+
+#3 Sorting List .................
+#list.sort()
+#sorted()
+
+#3.1.Сортиране на елементи на списък............
+#namalqvasht red - ne promenq dannite
+#data = [1,2,3,4]
+#sorted_data = sorted(data, reverse=True)
+
+#print(data)
+#print(sorted_data)
+
+
+#3.2....................
+#promenq na mqsto 
+#data = [1,2,5,3,4]
+#sorted_data = data.sort() #inlace
+
+#print(data)
+#print(sorted_data)
+
+
+#3.3................
+
+#data = [1,2,5,3,4]
+#data.sort(reverse=True) #inlace
+
+#print(data)
+
+#loops on list...........
+
+#l = [1,2,3,1,4]
+#remove all 1s
+#while 1 in l:
+ #   l.remove(1)
+
+#3.4............................
+#l = [1,2,3,1,4]
+
+#for _ in l:
+#    l.remove(1)
+
+#print(l)
+
+#4.........................Task 
+#enterr 3 students names i their match scores, find the student with mas score 
+#students ivan, stoyan, 
+#scores:5,3,6
+#reshenie 1
+#students_scores_1 =[
+ #   ['Ivan'],
+ #   ['Stoyan'],
+ #   [5,...]
+#]
+
+#reshenie 2
+
+#studentts_scores_2=[
+ #   []'Ivan', 5],
+ #   [],
+  #  [],
+#]
+
+
+#4.1...........zadacha 
+
+#user_input = 'Ivan'
+
+#students = []
+#students.append(user_input)
+
+#print(students)
+
+#4.2................kum zadacha 
+
+#students = []
+#user_input = input('Enter student name("for end):')
+#while user_input != '':
+#    students.append(user_input)
+#    user_input = input('Enter student name("for end):')
+#print(students)
+
+
+#4.3 kum zadacha ............
+#students =[]
+#while True: 
+ #   user_input = input ('enter student name("for end):') # ili .strip() - variant 3
+  #  #variant 1
+   # if user_input == '' or user_input==' ':
+
+   #ili  if user_input in (", ' ', '\')
+  #      break
+  #  students.append(user_input)
+#
+#print(students)
+
+#print (bool(not'Ivan')) #vrushta greshka 
+
+#5.0 reshenei na zadachata - Dobri praktiki za pisane na zadacha
+#kogato ima vuzmojnost da hvurli greshka 
+
+#get user input answear 
+
+#students =[]
+#scores=[]
+#while True: 
+##    try:
+#        input_name = input ('enter student name("for end):').strip()
+#        if (not input_name):
+#            break
+#        input_score = float(input'Enter student score(" for end):').strip() 
+#        if (not input_score):
+#            break
+    
+  #  except ValueError as e:
+  #      print('Enter number')
+
+ #   except KeyboardInterrupt:
+  #      print('Buy')
+ #       exit()
+
+#    except Exception:
+#        print('OOPS')
+
+
+#    students.append(input_name)
+#    scores.append(input_score)
+
+ 
+
+
+#print(students)
+#print(scores)
+
+
+
+#students = ['Ivan, 'Georgi, 'Petar']
+#scores = [5,4,6]
+
+#max_scores = max(scores)
+#print(max_scores)
+
+#max_scores_index = scores.index(max_scores)
+#print(f'Best student is{students[max_scores]}')
+
+
+
+
+
+
+#5...........example spisuk i dictionary
+
+#data = [
+#    {
+#        'name': 'iVAN'
+#        'email': 'ivan@mail.com'
+#},
+#{
+#    'name': 'Maria'
+#    'mail': 'maria@GMAIl.com'
+#}
+#]
+#print(f'User'{data[1]['name']}) mail is:{data[1]['email']}
+
+
+
+
+#6 example...........
+
+#data = {
+#    'user1':{
+#        'name': 'iVAN',
+#        'email': 'ivan@mail.com'
+#        },
+#        'user2':{
+#             'name': 'Maria',
+#             'mail': 'maria@GMAIl.com'
+#             }
+#}
+
+#print(f'User'{data['user2']['name']}) mail is:{'data['user]['email']}
+
+
+
+
+#7...............Dictionaries are unordered collections
+
+#l= [1,2,3]
+
+#d={
+#    'a':1,
+#    'b':2,
+#    'c':3
+#}
+
+#print(l)
+#print(d)
+
+
+
+
+
+#8..........Add element
+
+#l= [1,2,3]
+
+#d = {
+#    'a':1,
+#    'b':2,
+#    'c':3
+#}
+
+#d['d'] = 4 #update
+#d['d']= 4 #add
+#print(d)
+
+
+#9.........UPDATE  method
+
+#l= [1,2,3]
+
+#d = {
+#    'a':1,
+#    'b':2,
+#    'c':3
+#}
+
+#d.update({'a':9, 'd':4}})
+#print(d)
+
+
+#10...example kum 9
+
+#l= [1,2,3]
+
+#d = {
+#    'a':1,
+#    'b':2,
+#    'c':3
+#}
+
+#d.update([['a', 9], ['d', 4]])
+#print(d)
+
+
+
+#11.Delete elements/Remove............
+
+#l= [1,2,3]
+
+#d = {
+#    'a':1,
+#    'b':2,
+#    'c':3
+#}
+
+#del l[0]
+#del d['a']
+
+#print(l)
+#print(d)
+
+
+
+
+#12.Pop Example/Vrusta elementa............
+
+#l= [1,2,3]
+
+#d = {
+#    'a':1,
+#    'b':2,
+#    'c':3
+#}
+
+#l_el = l.pop(1)
+#d_el = d.pop('c')
+
+#print(l,l_el)
+#print(d, d_el)
+
+
+
+
+#13. Remove List/example...................
+
+#l= [1,2,3,1,3,1]
+
+#l.remove(1)
+#print(l)
+
+
+
+#14 Clear ............
+
+#l= [1,2,3,1,3,1]
+
+#l.clear()
+#print(l)
+
+
+#15.Copy function mutable (list,dictionary)................
+
+#d = {'a':1} #dictionary
+#copy_d=d #not a copy 
+#d['a']=9
+#print(9)
+#print(copy_d)
+
+
+
+
+
+#15.1 Copy to imutable (numbers, stings)........................
+#Vsichko imutable moje da e kliych nadictionary 
+
+
+#d = {'a':1} #dictionary/imutable (numbers, stings) 
+
+#copy_d=d #not a copy 
+#d['a']=9
+#print(d)
+#print(copy_d)
+
+#x = 4
+#copy_x = x
+#x = 9 
+
+#print(x)
+#print(copy_x)
+
+
+
+
+
+#16. Sorting dictionaries/Sortirane
+
+
+#d={
+#    'a':1,
+#    'c':3,
+#    'b':2
+#}
+
+#d_sorted = sorted(d)
+#print(d_sorted) 
+
+#VRUSHTA A, B, C
+
+
+
+
+#16.1. Example/Make shallow copy 
+
+#data = {'a':1}
+#copy_d = d.copy()
+#d['a']=9
+
+#print(d)
+#print(copy_d)
+
+
+
+
+
+#16.2 example................
+
+#d={
+#    'a':[1]
+#}
+#copy_d = d.copy()
+#d['a'][0]=9
+#print(d)
+#print(d)
+#print(copy_d)
+
+
+
+
+
+#16.3 Copy Example..................
+
+
+#data = [
+#    {
+#        'name': 'iVAN',
+#        'email': 'ivan@mail.com'
+#        },
+#        {
+#    'name': 'Maria',
+#    'email': 'maria@GMAIl.com'
+#    }
+#]
+
+#data_backup = data.copy()
+#data.pop(0)
+
+#print(data)
+#print('*'*60)
+#print(data_backup)
+
+#16.4 copy example
+#data = [
+#    {
+#        'name': 'iVAN',
+#        'email': 'ivan@mail.com'
+#        },
+#        {
+#    'name': 'Maria',
+#    'email': 'maria@GMAIl.com'
+#    }
+#]
+
+#data_backup = []
+#for el in data:
+#  data_backup.append(el)
+
+
+#data.pop(0)
+
+#print(data)
+#print('*'*60)
+#print(data_backup)
+
+
+
+
+
+#17.Deep Copy Examples/String/Full copy 
+
+#import json
+#data = [
+#    {
+#        'name': 'iVAN',
+#        'email': 'ivan@mail.com'
+#        },
+#        {
+#    'name': 'Maria',
+#    'email': 'maria@GMAIl.com'
+#    }
+#]
+
+#data_str = json.dumps(data)
+#copy_data = json.loads(data_str)
+
+#data[1]['name']='Pesho'
+#print(data)
+#print(copy_data)
+
+
+#18.Dict Keys ...............
+
+#d = {
+#    'a':1,
+#    'c':3,
+#    'b':2
+#}
+
+#print(d.keys())
+
+
+
+#18.1 Example 2/Dict Keys 
+#/Zadacha: dobavqme element f i go dobavqme na mqstoto na b
+
+#d = {
+#    'a':1,
+#    'c':3,
+#    'b':2
+#}
+
+#print(d.keys())
+#d['f'] = d['b']
+#del d['b']
+#print(d.keys())
+
+#18.2Example/spisuk/sushtata zadacha..........
+#d = {
+#    'a':1,
+#    'c':3,
+#    'b':2
+#}
+
+#print(list(d.keys()))
+#d['f'] = d['b']
+#del d['b']
+#print(d.keys())
+
+
+#19.Zadacha/ print all d values
+
+#d = {
+#    'a':1,
+#    'c':3,
+#    'b':2
+#}
+
+#for key in d:
+#    print(d[key])
+
+#variant 2/reshenie...........
+#d = {
+#    'a':1,
+#    'c':3,
+#    'b':2
+#}
+
+#for key in d:
+#    print(f'{key}=>{d[key]}')
+
+
+
+
+#20.Values /spisuk/print all keys values
+#nai-lesen i pravilen variant
+
+#d = {
+#    'a':1,
+#    'c':3,
+#    'b':2
+#}
+
+#print(d.values())
+
+
+
+#21.Dict Items/Example....................
+
+#d = {
+#    'a':1,
+#    'c':3,
+#    'b':2
+#}
+
+#print(d.keys())
+#print(d.values())
+#print(d.items())
+
+
+
+#21.1...................print all d keys=>values
+#d = {
+#    'a':1,
+#    'c':3,
+#    'b':2
+#}
+
+#for key, value in d.items():
+#    print(f'{key}=>{value}')
+
+
+#21.2 KATO SPISUK .............................
+#key,value = ['a', 1]
+#print(key)
+#print(value)
+
+#22... Sorting dictionaries 
+
+#d = {
+#    'a':1,
+#    'c':3,
+#    'b':2
+#} 
+
+#d_sorted_keys = sorted(d)
+#d_sorted_vales = sorted(d.values())
+#print(d_sorted_keys)
+#print(d_sorted_vales)
+
+
+
+
