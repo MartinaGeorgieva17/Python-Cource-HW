@@ -65,8 +65,50 @@
 
 
 
+# Друг вариант за решаване на задачата: 
 
-# 3..FIFO, LIFO ..................................
+
+# import multiprocessing as mp
+# import time
+
+# def increment(queue, r):
+#     x = queue.get()
+
+#     print(f'x in process{mp.current_process().name} ={x}')
+
+#     for _ in r:
+#         x += 1
+
+
+# # save to queue incremented x:
+#     queue.put(x)
+#     print(f'x in {mp.current_process().name}: {x}')
+
+
+# if __name__ == '__main__':
+
+#     queue = mp.Queue()
+#     queue.put(0)
+
+
+#     start=time.time()
+#     pr1 = mp.Process(target=increment, args=(queue, range(1000),))
+#     pr2 = mp.Process(target=increment, args=(queue, range(1000),))
+
+
+#     pr1.start()
+#     pr2.start()
+#     pr1.join()
+#     pr2.join()
+    
+#     x = queue.get()
+#     time_taken = time.time() - start
+#     print(f"x in process {mp.current_process().name}: {x}")
+#     print(f"Time taken: {time_taken} seconds")
+
+
+
+# 3..FIFO, LIFO (first in, first out - FIFO) last in first out (LIFO)..................................
 
 # FIFO = first in first out 
 
@@ -92,3 +134,6 @@
 #     p.start
 #     p.join
 #     print('Worker did its job as separate Process!')
+
+
+# 5....................

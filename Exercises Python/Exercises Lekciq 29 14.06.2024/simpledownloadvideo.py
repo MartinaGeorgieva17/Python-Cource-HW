@@ -61,14 +61,14 @@
 # 5...Download Video Example..........................................................
 
 
-from pytube import YouTube
+# from pytube import YouTube
 
-pl = Playlist('https://www.youtube.com/watch?v=qM9UJ8QlV94&list=FL3eaXPePxoYZ5_0cFElG2tA')
+# pl = Playlist('https://www.youtube.com/watch?v=qM9UJ8QlV94&list=FL3eaXPePxoYZ5_0cFElG2tA')
 
-print(f'Videos count: {pl.length}')
+# print(f'Videos count: {pl.length}')
 
-for video_url in pl.url_generator():
-    print(video_url)
+# for video_url in pl.url_generator():
+#     print(video_url)
  
 
 
