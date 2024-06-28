@@ -166,17 +166,40 @@
 
 # 10............................................
 
-import re 
+# import re 
 
-text =""" 
-Ivan Ivanov: 30 years old;
-Petar Petrov:25 years old;
-"""
-#using capturing group to get names and ages 
-pattern = re.compile(r"(?:P<firs>\w+\s(?<second>\w+)):\s?(?P<age>\d+\s")
-matches = pattern.findall(text)
+# text =""" 
+# Ivan Ivanov: 30 years old;
+# Petar Petrov:25 years old;
+# """
+# #using capturing group to get names and ages 
+# pattern = re.compile(r"(?:P<firs>\w+\s(?<second>\w+)):\s?(?P<age>\d+\s")
+# matches = pattern.findall(text)
 
-for match in matches:
-    print("First Name:", match ['first'])
-    print("Second Name", match ['second'])
-    print("Age:", match ['age'])
+# for match in matches:
+#     print("First Name:", match ['first'])
+#     print("Second Name", match ['second'])
+#     print("Age:", match ['age'])
+
+
+
+# 11.Example with Regular expression, search and check for matches 
+# and printthe extracted information.....................................................
+
+
+# import re 
+
+# text = """ 
+# Ivan Ivanov: 30 years old;
+# Petar Petrov:25 years old;
+# """
+# #using capturing group to get names and ages 
+# pattern = re.compile(r"(?P<first>\w+)\s(?P<second>\w+):\s?(?P<age>\d+)\s")
+# m = pattern.search(text)
+
+# if m:
+#     print("First Name:", m.group('first'))
+#     print("Second Name", m.group('second'))
+#     print("Age:", m.group('age'))
+# else:
+#     print("No matche found")
