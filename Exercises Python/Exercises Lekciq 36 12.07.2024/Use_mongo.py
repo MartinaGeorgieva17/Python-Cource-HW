@@ -45,16 +45,37 @@
 
 # 4..List collections in a data base ...................................................
 
-from pymongo import MongoClient
+# from pymongo import MongoClient
 
-client = MongoClient()
-db = client.python_course
-res = db.users.insert_one ( {
-        "name": "Mariq",
-        "password":"1234"
-    }
-)
+# client = MongoClient()
+# db = client.python_course
+# res = db.users.insert_one ( {
+#         "name": "Mariq",
+#         "password":"1234"
+#     }
+# )
 
-print(f"Doc Id:{res.inserted_id}")
+# print(f"Doc Id:{res.inserted_id}")
 
+
+# 5.Получаваме информация за всички документи в Mongo..........................
+# from pymongo import MongoClient
+
+# client = MongoClient()
+# db = client.python_course
+# all_docs = db.users.find()
+# print(all_docs)
+
+
+
+# 6.Получаваме информация за всички документи в Mongo като лист.............................
+# from pymongo import MongoClient
+
+# client = MongoClient()
+# db = client.python_course
+# all_docs = db.users.find()
+# print(list(all_docs))
+
+
+# 7...................................
 

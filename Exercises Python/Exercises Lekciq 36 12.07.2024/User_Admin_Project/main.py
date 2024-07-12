@@ -18,6 +18,7 @@ def login_user():
     name, passwd = get_user_data()
     #get document with given name
 
+
 if __name__ == "__main__":
     db = DB()
     # db.list_collections()
@@ -28,4 +29,4 @@ if __name__ == "__main__":
     else:
         print("User not registered!")
 
-    login
+

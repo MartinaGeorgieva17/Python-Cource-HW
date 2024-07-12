@@ -33,3 +33,6 @@ class DB:
         #     "name":"Martina",
         #     "password": 1234
         # }
+
+    def get_user_by_name(self,name):
+        user = self.python_course_db.users.find_one()
