@@ -58,6 +58,8 @@
 # print(f"Doc Id:{res.inserted_id}")
 
 
+
+
 # 5.Получаваме информация за всички документи в Mongo..........................
 # from pymongo import MongoClient
 
@@ -77,5 +79,36 @@
 # print(list(all_docs))
 
 
-# 7...................................
+
+
+
+# 7.Get user by name..................................
+
+# from pymongo import MongoClient
+
+# client = MongoClient()
+# db = client.python_course
+# db.users.find({"name":"Ada"})
+# print(list(users))
+
+
+
+
+# 8....................................
+# from pymongo import MongoClient
+
+# client = MongoClient()
+# db = client.python_course
+# users = db.users.find(
+#     {"name":"Ada"}, 
+#      {"id":0,
+#       "password":1
+#      }
+# )
+# print(list(users))
+
+
+
+# 9........................
+
 
