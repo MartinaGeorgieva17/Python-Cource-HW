@@ -18,19 +18,19 @@ except Error as e:
     print(f"Error: '{e}'")
 
 
-# # insert many row 
+# # insert many row  #Вариант 0
 
-# users_data = [
-#     ('Pesho2', 'pesho@gmail.com'),
-#     ('Pesho3', 'pesho@gmail.com')
-# ]
+# users_data = [  #Вариант 0
+#     ('Pesho2', 'pesho@gmail.com'),  #Вариант 0
+#     ('Pesho3', 'pesho@gmail.com')  #Вариант 0
+# ]  #Вариант 0
 
-# with db.cursor() as cursor:
-#     sql = f"""insert into users (name, email) values {%s, %s};"""
-#     print(sql)
-# #print(sql)
-#     cursor.executemany(sql, users_data,[0])
-#     db.commit()
+# with db.cursor() as cursor: #Вариант 0
+#     sql = f"""insert into users (name, email) values {%s, %s};""" #Вариант 0
+#     print(sql) #Вариант 0
+# #print(sql) #Вариант 0 
+#     cursor.executemany(sql, users_data,[0]) #Вариант 0
+#     db.commit()  #Вариант 0
 
 
 with db.cursor()as cursor:
