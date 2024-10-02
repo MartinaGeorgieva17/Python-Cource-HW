@@ -13,5 +13,9 @@
             "username": "Martina",
             "database": "testdb"
         }
-    ]
+    ],
+    "pyqt-integration.pyuic.cmd": "pyuic6",
+    "pyqt-integration.qtdesigner.path": "F:\\Python2024\\Python Cource HW\\.venv\\Scripts\\pyqt6-tools.exe designer",
+    "pyqt-integration.pylupdate.cmd": "pylupdate6",
+    "pyqt-integration.pyrcc.cmd": "pyrcc6"
 }
